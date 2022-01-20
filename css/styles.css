@@ -30,6 +30,8 @@ button {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 .container {
     width: 1200px;
@@ -175,11 +177,18 @@ max-width: 696px;
 margin-left: auto;
 margin-right: auto;
 }
+.item-content:not(:last-child) {
+    margin-right: 30px;
+}
 /* FEATURES */
 
+.features-item:not(:first-child) {
+    margin-left: 30px;   
+}
+
 .container-features{
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .features-list .hero-title{
     font-family: Roboto;
@@ -195,6 +204,7 @@ color: var(--main-color);
 .features-list{
     display: flex;
     justify-content: center;
+    /* padding-left: 30px; */
     
 }
 .features-title {
@@ -215,6 +225,7 @@ color: var(--main-color);
     letter-spacing: 0.03em;
     
     color: var(--secondary-color);
+  
 }
 .title {
     margin-bottom: 50px;
@@ -224,13 +235,26 @@ color: var(--main-color);
 .container-pic {
     display: flex;
     justify-content: space-between;
-  
-
+}
+.container-todo {
+    padding-bottom: 94px;
 }
 /* MEMBERS */
 .members {
     background-color: #F5F4FA;
+    margin: 0;
     ;
+}
+.container-members {
+    padding-top: 94px;
+}
+.list-members {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-top: 50px;
+    /* margin-bottom: 94px; */
+    margin-left: -30px;
 }
 .title {
     font-weight: bold;
@@ -249,8 +273,18 @@ text-align: center;
 letter-spacing: 0.03em;
 
 color: var(--main-color);
+
 margin-top: 94px;
 margin-bottom: 50px;
+
+}
+.name-item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  margin-bottom: 94px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+overflow: hidden;
 }
 .name {
     font-weight: 500;
@@ -259,6 +293,7 @@ line-height: 1.18;
 letter-spacing: 0.03em;
 
 color: var(--main-color);
+margin-top: 30px;
 }
 .name-text {
     font-weight: normal;
@@ -267,8 +302,21 @@ line-height: 1.18;
 letter-spacing: 0.03em;
 
 color: var(--secondary-color);
+margin-top: 10px;
+}
+.card-content {
+    padding-bottom: 30px;
 }
 /* FOOTER */
+.bottom {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.bottom-contact {
+margin-top: 20px;
+}
 .map {
     font-weight: normal;
     font-style: normal;
